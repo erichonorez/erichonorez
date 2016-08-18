@@ -12,13 +12,13 @@ Une machine à états finis est un modèle mathématique qui permet de décrire 
 Suivant ce modèle, un système ne peut être que dans un seul état à la fois et le changement de celui-ci est provoqué par un évènement.
 
 Plus formellement, une machine à états finis se défini comme le quintuple
-(Q, V, δ, I, F) avec:
+(`Q`, `V`, `δ`, `I`, `F`) avec:
 
-- Q étant l'ensemble des états que le système peut avoir;
-- V étant l'ensemble des évènements que le système comprend, auxquels il réagit;
-- I étant l'état initial du système qui fait partie de Q;
-- F est l'ensemble des états finaux du système;
-- δ étant l'ensemble des relations de transition.
+- `Q` étant l'ensemble des états que le système peut avoir;
+- `V` étant l'ensemble des évènements que le système comprend, auxquels il réagit;
+- `I` étant l'état initial du système qui fait partie de Q;
+- `F` est l'ensemble des états finaux du système;
+- `δ` étant l'ensemble des relations de transition.
 
 Il existe deux types de machine à états finis:
 
@@ -27,19 +27,19 @@ Il existe deux types de machine à états finis:
 
 Prenons un exemple courant qui pourrait se modéliser comme une de machine à états finis: un processus Kanban. Kanban permet de visualiser et matérialiser un processus composé de plusieurs étapes que les tâches à faire vont successivement traverser. Imaginons un processus développement logiciel composés des étapes suivantes:
 
-1. TO DO
-2. IN PROGRESS
-3. WAITING_ACCEPTANCE
-4. FOR_PRODUCTION
-5. IN_PRODUCTION
+1. `TO DO`
+2. `IN PROGRESS`
+3. `WAITING_ACCEPTANCE`
+4. `FOR_PRODUCTION`
+5. `IN_PRODUCTION`
 
 Ces étapes forme l'ensemble des états qu'une tâche à faire peut avoir. L'état initial est "TO DO" tandis que l'état final est "DEPLOYED". Voici les différentes relations de transition:
 
-1. TO DO -> IN PROGRESS: lorsqu'un développeur s'assigne la tâche à faire;
-2. IN PROGRESS -> WAITING_ACCEPTANCE: lorsque le code est mergé dans le repository git;
-3. WAITING_ACCEPTANCE -> FOR_PRODUCTION: lorsque les utilisateurs finaux ont validé le bon fonctionnement la fonctionnalité;
-4. WAITING_ACCEPTANCE -> IN_PROGRESS: lorsque les utilisateurs finaux n'ont pas validés le bon fonctionnement de la fonctionnalité et que la tâche à faire est automatiquement réassignée au développeur;
-5. FOR_PRODUCTION -> IN_PRODUCTION: lorsque la fonctionnalité est déployée en production.
+1. `TO DO` -> `IN PROGRESS`: lorsqu'un développeur s'assigne la tâche à faire;
+2. `IN PROGRESS` -> `WAITING_ACCEPTANCE`: lorsque le code est mergé dans le repository git;
+3. `WAITING_ACCEPTANCE` -> `FOR_PRODUCTION`: lorsque les utilisateurs finaux ont validé le bon fonctionnement la fonctionnalité;
+4. `WAITING_ACCEPTANCE` -> `IN_PROGRESS`: lorsque les utilisateurs finaux n'ont pas validés le bon fonctionnement de la fonctionnalité et que la tâche à faire est automatiquement réassignée au développeur;
+5. `FOR_PRODUCTION` -> `IN_PRODUCTION`: lorsque la fonctionnalité est déployée en production.
 
 Ces relations de transition sont toujours une fonction de type: (Etat courrant x Evénement) -> nouvel état.
 
