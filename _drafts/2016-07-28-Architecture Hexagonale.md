@@ -163,6 +163,9 @@ Les règles d'architectures sont facilement compréhensibles et communicable. J'
 
 ## Resources
 
-Uncle Bob Martin
-Vaugh Vernon
-Alistair Cockburn
+* [Hexagonal Architecture by Alistair Cockburn](http://alistair.cockburn.us/Hexagonal+architecture)
+* [The architect's clue bucket](http://www.ruthmalan.com/Journal/JournalCurrent.htm#architecture)
+* [A zoom on the hexagonal/clean/onion architecture](http://tpierrain.blogspot.be/2013/08/a-zoom-on-hexagonalcleanonion.html)
+* [The Clean Architecture by Uncle Bob Martin](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
+* [Software Architecture Pattern on O'Reilly](https://www.oreilly.com/ideas/software-architecture-patterns)
+*  [Agility and Software Architecture](http://www.grahamlea.com/2015/07/agility-software-architecture-simon-brown-yow-2014/)
