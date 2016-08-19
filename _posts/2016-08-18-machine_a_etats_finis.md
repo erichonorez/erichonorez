@@ -2,6 +2,7 @@
 layout: post
 title:  "Machine à états finis"
 date:   2016-07-28 12:00:00 +0200
+comments: true
 ---
 
 
