@@ -1,12 +1,3 @@
-
----
-layout: post
-title:  "Kafka notes"
-date:   2016-09-21 12:00:00 +0200
----
-
-# Kafka notes
-
 ## Configuration
 
 ### Producer
